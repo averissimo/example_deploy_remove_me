@@ -2095,6 +2095,37 @@
         "Built": "R 4.3.1; ; 2023-08-29 14:49:43 UTC; unix"
       }
     },
+    "scda.2022": {
+      "Source": "r_universe",
+      "Repository": "https://pharmaverse.r-universe.dev",
+      "description": {
+        "Type": "Package",
+        "Package": "scda.2022",
+        "Title": "Synthetic CDISC Data Archive 2022",
+        "Version": "0.1.5.9003",
+        "Date": "2023-09-07",
+        "Authors@R": "c(\n    person(\"Joe\", \"Zhu\", , \"joe.zhu@roche.com\", role = c(\"aut\", \"cre\")),\n    person(\"Pawel\", \"Rucki\", , \"pawel.rucki@roche.com\", role = \"aut\"),\n    person(\"F. Hoffmann-La Roche AG\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "An archive of synthetic CDISC data for 2022.",
+        "License": "Apache License 2.0 | file LICENSE",
+        "Depends": "R (>= 3.6)",
+        "Config/Needs/website": "insightsengineering/nesttemplate",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "LazyData": "true",
+        "LazyDataCompression": "bzip2",
+        "Roxygen": "list(markdown = TRUE)",
+        "RoxygenNote": "7.2.3",
+        "Repository": "https://pharmaverse.r-universe.dev",
+        "RemoteUrl": "https://github.com/insightsengineering/scda.2022",
+        "RemoteRef": "HEAD",
+        "RemoteSha": "75b1289bb9b85d5d9ea56fa738525f560798d98f",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-09-07 09:06:36 UTC; root",
+        "Author": "Joe Zhu [aut, cre],\n  Pawel Rucki [aut],\n  F. Hoffmann-La Roche AG [cph, fnd]",
+        "Maintainer": "Joe Zhu <joe.zhu@roche.com>",
+        "Built": "R 4.3.1; ; 2023-09-07 13:15:07 UTC; unix"
+      }
+    },
     "shiny": {
       "Source": "CRAN",
       "Repository": "https://cloud.r-project.org",
@@ -2951,13 +2982,13 @@
       "checksum": "33ad5af9932cf5cbe8847ebf03ede929"
     },
     ".Rprofile": {
-      "checksum": "f116a1757307ad4dd2919b92a0b6f89f"
+      "checksum": "a6ae4b5445c5c3e5a58027b536220f2f"
     },
     "app.R": {
-      "checksum": "c6c739643dfac317e161c17643101260"
+      "checksum": "ee2646959bd3a96b68122e45d69095e9"
     },
     "renv.lock": {
-      "checksum": "0c828cccab94599e75883cc69f8c87d3"
+      "checksum": "7143be8d42c66078586aa731837d6c58"
     }
   },
   "users": null

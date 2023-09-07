@@ -978,6 +978,16 @@
       ],
       "Hash": "a697f80f8c4cce27c46738b4625dad57"
     },
+    "scda.2022": {
+      "Package": "scda.2022",
+      "Version": "0.1.5.9003",
+      "Source": "Repository",
+      "Repository": "https://pharmaverse.r-universe.dev",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "6928f453bf1b09ac6cb4825311840922"
+    },
     "shiny": {
       "Package": "shiny",
       "Version": "1.7.5",

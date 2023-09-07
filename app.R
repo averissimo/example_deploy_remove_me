@@ -2,6 +2,7 @@ options("teal.bs_theme" = bslib::bs_theme(version = 3))
 library(teal.slice)
 library(teal)
 library(scda)
+library(scda.2022)
 
 funny_module <- function (label = "Filter states", datanames = "all") {
   checkmate::assert_string(label)
