@@ -1,5 +1,6 @@
 options("teal.bs_theme" = bslib::bs_theme(version = 3))
 
+library(teal.slice)
 library(teal)
 library(teal.modules.general)
 ADSL <- teal.modules.general::rADSL
