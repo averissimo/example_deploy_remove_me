@@ -1441,8 +1441,13 @@
     "rtables": {
       "Package": "rtables",
       "Version": "0.6.3.9000",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "rtables",
+      "RemoteRef": "main",
+      "RemoteSha": "8f012827cfef2c9c4726d745f14a28e01470be39",
       "Requirements": [
         "R",
         "formatters",
@@ -1452,7 +1457,7 @@
         "methods",
         "stats"
       ],
-      "Hash": "aa4de8c327e502eb99d9c630e710b290"
+      "Hash": "8bed090983083a1d578dc2841893c238"
     },
     "sass": {
       "Package": "sass",
@@ -1679,8 +1684,13 @@
     "teal": {
       "Package": "teal",
       "Version": "0.14.0.9005",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal",
+      "RemoteRef": "main",
+      "RemoteSha": "6bb26c7f216dbf68ffb962ee75838caabdd268d0",
       "Requirements": [
         "R",
         "checkmate",
@@ -1699,13 +1709,18 @@
         "teal.widgets",
         "utils"
       ],
-      "Hash": "63301a65de9c67615fb2a3973a74e04a"
+      "Hash": "f6fa0a319c1c75734838e8ecb4151e2b"
     },
     "teal.code": {
       "Package": "teal.code",
       "Version": "0.4.0.9006",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal.code",
+      "RemoteRef": "main",
+      "RemoteSha": "1481c412a5dd72ed58b123ae775c83e1f8faeb03",
       "Requirements": [
         "R",
         "checkmate",
@@ -1716,13 +1731,18 @@
         "shiny",
         "styler"
       ],
-      "Hash": "c30595661aa2a64afa6a9092da6d9670"
+      "Hash": "90e72978b9c8e272b596e0783c3467e8"
     },
     "teal.data": {
       "Package": "teal.data",
-      "Version": "0.3.0.9002",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Version": "0.3.0.9003",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal.data",
+      "RemoteRef": "main",
+      "RemoteSha": "37530181c2d156b9291747b2902e32e099e81a5e",
       "Requirements": [
         "R",
         "R6",
@@ -1739,13 +1759,18 @@
         "utils",
         "yaml"
       ],
-      "Hash": "b5957434209578e0de87d56a546647ad"
+      "Hash": "82432afd6c6c3949dd25c0d0a778568b"
     },
     "teal.logger": {
       "Package": "teal.logger",
       "Version": "0.1.2.9000",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal.logger",
+      "RemoteRef": "main",
+      "RemoteSha": "83bfc0dd7c66f493690d0369bcd485745cdc414a",
       "Requirements": [
         "R",
         "glue",
@@ -1754,13 +1779,18 @@
         "shiny",
         "withr"
       ],
-      "Hash": "286538f428fe09213ed66bb3acaa7bb3"
+      "Hash": "ddbabcacce9f08f4bb267295bcd03d1a"
     },
     "teal.modules.general": {
       "Package": "teal.modules.general",
       "Version": "0.2.16.9006",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal.modules.general",
+      "RemoteRef": "main",
+      "RemoteSha": "a61216e66e14cf0f5ac0b9b24c3bd58b3b7e34d7",
       "Requirements": [
         "DT",
         "R",
@@ -1793,13 +1823,18 @@
         "tidyselect",
         "utils"
       ],
-      "Hash": "184e618240542ad0d3d5f49f5dd4c91a"
+      "Hash": "e3d1d3709c006144070616737545b8bd"
     },
     "teal.reporter": {
       "Package": "teal.reporter",
-      "Version": "0.2.0.9002",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Version": "0.2.0.9003",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal.reporter",
+      "RemoteRef": "main",
+      "RemoteSha": "55e890abb7ba165f6bf6754e86fa21f2d11dc2b5",
       "Requirements": [
         "R6",
         "bslib",
@@ -1814,18 +1849,18 @@
         "yaml",
         "zip"
       ],
-      "Hash": "34161e90dc81d68763cd753071a5a8e9"
+      "Hash": "707ca38932eddec82ce4f762829f3c41"
     },
     "teal.slice": {
       "Package": "teal.slice",
-      "Version": "0.4.0",
+      "Version": "0.4.0.9011",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteUsername": "insightsengineering",
       "RemoteRepo": "teal.slice",
-      "RemoteRef": "v0.4.0",
-      "RemoteSha": "fa00471f62ace0894cfb48877f67ec96713c9098",
+      "RemoteRef": "main",
+      "RemoteSha": "8bd49e971bef053046793f8803231ffcf4e2c977",
       "Requirements": [
         "R",
         "R6",
@@ -1847,13 +1882,18 @@
         "teal.logger",
         "teal.widgets"
       ],
-      "Hash": "5b5b4840d3e3583250877f04d75e35bf"
+      "Hash": "7cf511f24b7813cbc41806364d2b8e5a"
     },
     "teal.transform": {
       "Package": "teal.transform",
       "Version": "0.4.0.9003",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal.transform",
+      "RemoteRef": "main",
+      "RemoteSha": "b1edf928d225f8f6577162c6b47a2c938480f02d",
       "Requirements": [
         "R",
         "checkmate",
@@ -1874,13 +1914,18 @@
         "tidyr",
         "tidyselect"
       ],
-      "Hash": "773fb8391a98f2dbdc7013a25a1e0bbf"
+      "Hash": "0bde6d817fc6a23c187724b5caa482e4"
     },
     "teal.widgets": {
       "Package": "teal.widgets",
       "Version": "0.4.0.9007",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "teal.widgets",
+      "RemoteRef": "main",
+      "RemoteSha": "a3ed32d8979e4179db00e45438be61dc811f91ce",
       "Requirements": [
         "R",
         "bslib",
@@ -1897,13 +1942,18 @@
         "shinyjs",
         "styler"
       ],
-      "Hash": "259371d64069300ffa0daae92ebe1bad"
+      "Hash": "0ee0ffe83b52a44825f04f89318789a0"
     },
     "tern": {
       "Package": "tern",
       "Version": "0.9.0.9000",
-      "Source": "Repository",
-      "Repository": "https://pharmaverse.r-universe.dev",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "insightsengineering",
+      "RemoteRepo": "tern",
+      "RemoteRef": "main",
+      "RemoteSha": "263e67151897da7337cedb1d3d37a756bda69cb9",
       "Requirements": [
         "R",
         "Rdpack",
@@ -1932,7 +1982,7 @@
         "tidyr",
         "utils"
       ],
-      "Hash": "a1b4307fd21d437a6f5d8cd7ba67f1ba"
+      "Hash": "c882eadd33c5df73dfa86671434a0f2b"
     },
     "testthat": {
       "Package": "testthat",
