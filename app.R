@@ -1,68 +1,45 @@
 options("teal.bs_theme" = bslib::bs_theme(version = 3))
-library(teal.slice)
+
 library(teal)
-library(scda)
-library(scda.2022)
+library(teal.modules.general)
+ADSL <- teal.modules.general::rADSL
+ADAE <- teal.modules.general::rADAE
 
-funny_module <- function (label = "Filter states", datanames = "all") {
-  checkmate::assert_string(label)
-  module(
-    label = label,
-    datanames = datanames,
-    ui = function(id, ...) {
-      ns <- NS(id)
-      div(
-        h2("The following filter calls are generated:"),
-        verbatimTextOutput(ns("filter_states")),
-        verbatimTextOutput(ns("filter_calls")),
-        actionButton(ns("reset"), "reset_to_default")
+app <- teal::init(
+  data = teal.data::cdisc_data(
+    teal.data::cdisc_dataset("ADSL", ADSL, code = "ADSL <- teal.modules.general::rADSL"),
+    teal.data::cdisc_dataset("ADAE", ADAE, code = "ADSL <- teal.modules.general::rADAE"),
+    check = TRUE
+  ),
+  modules = teal::modules(
+    teal.modules.general::tm_data_table(
+      label = "ADS Data Table",
+      variables_selected = list(ADSL = c("STUDYID", "USUBJID", "SUBJID", "SITEID", "AGE", "SEX", "COUNTRY")),
+      dt_args = list(caption = "ADSL Table Caption")
+    ),
+    teal.modules.general::tm_missing_data(
+      label = "ADS Missing Data",
+      ggplot2_args = list(
+        "Combinations Hist" = teal.widgets::ggplot2_args(
+          labs = list(subtitle = "Plot produced by Missing Data Module", caption = NULL)
+        ),
+        "Combinations Main" = teal.widgets::ggplot2_args(labs = list(title = NULL))
       )
-    },
-    server = function(input, output, session, data, filter_panel_api) {
-      checkmate::assert_class(data, "tdata")
-      observeEvent(input$reset, set_filter_state(filter_panel_api, default_filters))
-      output$filter_states <- renderText({
-        logger::log_trace("rendering text1")
-        stage1 <- filter_panel_api |> get_filter_state()
-        stage2 <- lapply(stage1, as.list)
-        stage3 <- yaml::as.yaml(stage2)
-        stage3
-      })
-      output$filter_calls <- renderText({
-        logger::log_trace("rendering text2")
-        attr(data, "code")()
-      })
-    }
+    )
+  ),
+  filter = teal_slices(
+    teal_slice("ADSL", "COUNTRY", "country", selected = "USA", fixed = TRUE),
+    teal_slice("ADSL", "RACE", "race", selected = "ASIAN"),
+    teal_slice("ADSL", id = "custom1", title = "Adult Female", expr = "SEX == 'F' & AGE >= 18"),
+    teal_slice("ADSL", "ETHNIC", "ethnic", anchored = TRUE),
+    module_specific = TRUE,
+    mapping = list(
+      "ADS Data Table" = c("country", "ethnic"),
+      "ADS Missing Data" = c("race"),
+      global_filters = "custom1"
+    ),
+    count_type = "all"
   )
-}
-
-Iris <- iris
-levels(Iris$Species) #%<>% toupper()
-Iris$Species2 <- Iris$Species
-Iris$Species3 <- Iris$Species
-Iris$Sepal.Length[1] <- NA
-Iris$Sepal.Length[2] <- Inf
-Iris$Species3[2] <- NA
-attr(Iris[[1]], "label") <- "variable label"
-attr(Iris[[2]], "label") <- "variable label"
-attr(Iris[[3]], "label") <- "variable label"
-attr(Iris[[4]], "label") <- "variable label"
-data <- teal_data(
-  dataset("iris", Iris),
-  dataset("mtcars", mtcars)
 )
 
-default_filters <- teal_slices(
-  teal_slice("iris", "Sepal.Length", fixed = FALSE, anchored = FALSE),
-  teal_slice("iris", "Sepal.Width", sel = c(2.5, 4.0), fixed = FALSE, anchored = TRUE),
-  teal_slice("iris", "Petal.Length", sel = c(4.5, 5.1), fixed = TRUE, anchored = FALSE),
-  teal_slice("iris", "Petal.Width", sel = c(0.3, 1.8), fixed = TRUE, anchored = TRUE),
-  count_type = NULL
-)
-
-app <- init(
-  data = data,
-  modules = list(funny_module(), funny_module("module2")), filter = default_filters
-)
-
-runApp(app, launch.browser = TRUE)
+shinyApp(app$ui, app$server)
