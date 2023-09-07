@@ -5,7 +5,7 @@
       {
         "Name": "CRAN",
         "URL": "https://cloud.r-project.org"
-      }, 
+      },
       {
         "Name": "r_universe",
         "URL": "https://pharmaverse.r-universe.dev"
@@ -151,13 +151,13 @@
     },
     "askpass": {
       "Package": "askpass",
-      "Version": "1.1",
+      "Version": "1.2.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "sys"
       ],
-      "Hash": "e8a22846fff485f0be3770c2da758713"
+      "Hash": "cad6cf7f1d5f6e906700b9d3e718c796"
     },
     "backports": {
       "Package": "backports",
@@ -613,14 +613,14 @@
     },
     "labeling": {
       "Package": "labeling",
-      "Version": "0.4.2",
+      "Version": "0.4.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "graphics",
         "stats"
       ],
-      "Hash": "3d5108641f47470611a32d0bdf357a72"
+      "Hash": "b64ec208ac5bc1852b285f665d6368b3"
     },
     "later": {
       "Package": "later",
@@ -1014,7 +1014,7 @@
     },
     "shinyWidgets": {
       "Package": "shinyWidgets",
-      "Version": "0.7.6",
+      "Version": "0.8.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1028,7 +1028,7 @@
         "sass",
         "shiny"
       ],
-      "Hash": "fd889b32caa37b8ed9b1e9e7ef1564bc"
+      "Hash": "c6acc72327e63668bbc7bd258ee54132"
     },
     "shinycssloaders": {
       "Package": "shinycssloaders",
@@ -1112,7 +1112,7 @@
     },
     "styler": {
       "Package": "styler",
-      "Version": "1.10.1",
+      "Version": "1.10.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1127,7 +1127,7 @@
         "vctrs",
         "withr"
       ],
-      "Hash": "b0911fdb2c682f526f6e9c131fd40a1f"
+      "Hash": "d61238fd44fc63c8adf4565efe8eb682"
     },
     "sys": {
       "Package": "sys",
@@ -1138,7 +1138,7 @@
     },
     "teal": {
       "Package": "teal",
-      "Version": "0.14.0.9004",
+      "Version": "0.14.0.9005",
       "Source": "Repository",
       "Repository": "https://pharmaverse.r-universe.dev",
       "Requirements": [
@@ -1159,11 +1159,11 @@
         "teal.widgets",
         "utils"
       ],
-      "Hash": "ef404e95c8f35ec42f56d9ee3ef2affe"
+      "Hash": "63301a65de9c67615fb2a3973a74e04a"
     },
     "teal.data": {
       "Package": "teal.data",
-      "Version": "0.3.0.9001",
+      "Version": "0.3.0.9002",
       "Source": "Repository",
       "Repository": "https://pharmaverse.r-universe.dev",
       "Requirements": [
@@ -1182,7 +1182,7 @@
         "utils",
         "yaml"
       ],
-      "Hash": "b84c159a7cc4ebec20ea4e4546f00322"
+      "Hash": "b5957434209578e0de87d56a546647ad"
     },
     "teal.logger": {
       "Package": "teal.logger",

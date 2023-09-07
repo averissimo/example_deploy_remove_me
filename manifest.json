@@ -298,26 +298,25 @@
       "description": {
         "Package": "askpass",
         "Type": "Package",
-        "Title": "Safe Password Entry for R, Git, and SSH",
-        "Version": "1.1",
+        "Title": "Password Entry Utilities for R, Git, and SSH",
+        "Version": "1.2.0",
         "Authors@R": "person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), \n    email = \"jeroen@berkeley.edu\", comment = c(ORCID = \"0000-0002-4035-0289\"))",
         "Description": "Cross-platform utilities for prompting the user for credentials or a \n    passphrase, for example to authenticate with a server or read a protected key.\n    Includes native programs for MacOS and Windows, hence no 'tcltk' is required. \n    Password entry can be invoked in two different ways: directly from R via the \n    askpass() function, or indirectly as password-entry back-end for 'ssh-agent' \n    or 'git-credential' via the SSH_ASKPASS and GIT_ASKPASS environment variables.\n    Thereby the user can be prompted for credentials or a passphrase if needed \n    when R calls out to git or ssh.",
         "License": "MIT + file LICENSE",
-        "URL": "https://github.com/jeroen/askpass#readme",
-        "BugReports": "https://github.com/jeroen/askpass/issues",
+        "URL": "https://github.com/r-lib/askpass",
+        "BugReports": "https://github.com/r-lib/askpass/issues",
         "Encoding": "UTF-8",
-        "LazyData": "true",
         "Imports": "sys (>= 2.1)",
-        "RoxygenNote": "6.1.1",
+        "RoxygenNote": "7.2.3",
         "Suggests": "testthat",
         "Language": "en-US",
         "NeedsCompilation": "yes",
-        "Packaged": "2019-01-13 12:08:17 UTC; jeroen",
+        "Packaged": "2023-09-03 19:16:12 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
         "Repository": "CRAN",
-        "Date/Publication": "2019-01-13 12:50:03 UTC",
-        "Built": "R 4.3.0; x86_64-pc-linux-gnu; 2023-06-19 16:18:19 UTC; unix"
+        "Date/Publication": "2023-09-03 20:00:02 UTC",
+        "Built": "R 4.3.1; x86_64-pc-linux-gnu; 2023-09-06 12:54:38 UTC; unix"
       }
     },
     "backports": {
@@ -1342,8 +1341,8 @@
         "Package": "labeling",
         "Type": "Package",
         "Title": "Axis Labeling",
-        "Version": "0.4.2",
-        "Date": "2020-10-15",
+        "Version": "0.4.3",
+        "Date": "2023-08-29",
         "Author": "Justin Talbot,",
         "Maintainer": "Nuno Sempere <nuno.semperelh@gmail.com>",
         "Description": "Functions which provide a range of axis labeling algorithms. ",
@@ -1351,10 +1350,10 @@
         "Collate": "'labeling.R'",
         "NeedsCompilation": "no",
         "Imports": "stats, graphics",
-        "Packaged": "2020-10-18 12:56:46 UTC; nuno",
+        "Packaged": "2023-08-29 21:01:57 UTC; loki",
         "Repository": "CRAN",
-        "Date/Publication": "2020-10-20 07:00:09 UTC",
-        "Built": "R 4.3.0; ; 2023-06-19 16:21:02 UTC; unix"
+        "Date/Publication": "2023-08-29 22:20:02 UTC",
+        "Built": "R 4.3.1; ; 2023-08-30 12:18:24 UTC; unix"
       }
     },
     "later": {
@@ -2133,7 +2132,7 @@
       "description": {
         "Package": "shinyWidgets",
         "Title": "Custom Inputs Widgets for Shiny",
-        "Version": "0.7.6",
+        "Version": "0.8.0",
         "Authors@R": "c(\n  person(\"Victor\", \"Perrier\", email = \"victor.perrier@dreamrs.fr\", role = c(\"aut\", \"cre\", \"cph\")),\n  person(\"Fanny\", \"Meyer\", role = \"aut\"),\n  person(\"David\", \"Granjon\", role = \"aut\"),\n  person(\"Ian\", \"Fellows\", role = \"ctb\", comment = \"Methods for mutating vertical tabs & updateMultiInput\"),\n  person(\"Wil\", \"Davis\", role = \"ctb\", comment = \"numericRangeInput function\"),\n  person(\"Spencer\", \"Matthews\", role = \"ctb\", comment = \"autoNumeric methods\"),\n  person(family = \"JavaScript and CSS libraries authors\", role = c(\"ctb\", \"cph\"), comment = \"All authors are listed in LICENSE.md\")\n  )",
         "Description": "Collection of custom input controls and user interface components for 'Shiny' applications. \n  Give your applications a unique and colorful style !",
         "URL": "https://github.com/dreamRs/shinyWidgets,\nhttps://dreamrs.github.io/shinyWidgets/",
@@ -2141,17 +2140,17 @@
         "License": "GPL-3",
         "Encoding": "UTF-8",
         "LazyData": "true",
-        "RoxygenNote": "7.2.1",
+        "RoxygenNote": "7.2.3",
         "Depends": "R (>= 3.1.0)",
         "Imports": "anytime, bslib, sass, shiny (>= 1.6.0), htmltools (>= 0.5.1),\njsonlite, grDevices, rlang",
-        "Suggests": "shinydashboard, testthat, covr, shinydashboardPlus (>=\n2.0.0), bs4Dash, argonR, argonDash, tablerDash, ggplot2, DT,\nscales",
+        "Suggests": "testthat, covr, ggplot2, DT, scales, shinydashboard,\nshinydashboardPlus",
         "NeedsCompilation": "no",
-        "Packaged": "2023-01-08 18:42:06 UTC; victor",
+        "Packaged": "2023-08-30 14:04:56 UTC; victorp",
         "Author": "Victor Perrier [aut, cre, cph],\n  Fanny Meyer [aut],\n  David Granjon [aut],\n  Ian Fellows [ctb] (Methods for mutating vertical tabs &\n    updateMultiInput),\n  Wil Davis [ctb] (numericRangeInput function),\n  Spencer Matthews [ctb] (autoNumeric methods),\n  JavaScript and CSS libraries authors [ctb, cph] (All authors are listed\n    in LICENSE.md)",
         "Maintainer": "Victor Perrier <victor.perrier@dreamrs.fr>",
         "Repository": "CRAN",
-        "Date/Publication": "2023-01-08 19:30:04 UTC",
-        "Built": "R 4.3.0; ; 2023-06-19 16:26:26 UTC; unix"
+        "Date/Publication": "2023-08-30 15:00:02 UTC",
+        "Built": "R 4.3.1; ; 2023-09-06 13:11:20 UTC; unix"
       }
     },
     "shinycssloaders": {
@@ -2323,7 +2322,7 @@
         "Type": "Package",
         "Package": "styler",
         "Title": "Non-Invasive Pretty Printing of R Code",
-        "Version": "1.10.1",
+        "Version": "1.10.2",
         "Authors@R": "\n    c(person(given = \"Kirill\",\n             family = \"Müller\",\n             role = \"aut\",\n             email = \"kirill@cynkra.com\",\n             comment = c(ORCID = \"0000-0002-1416-3412\")),\n      person(given = \"Lorenz\",\n             family = \"Walthert\",\n             role = c(\"cre\", \"aut\"),\n             email = \"lorenz.walthert@icloud.com\"),\n      person(given = \"Indrajeet\",\n             family = \"Patil\",\n             role = \"ctb\",\n             email = \"patilindrajeet.science@gmail.com\",\n             comment = c(ORCID = \"0000-0003-1995-6531\", Twitter = \"@patilindrajeets\")))",
         "Description": "Pretty-prints R code without changing the user's formatting\n    intent.",
         "License": "MIT + file LICENSE",
@@ -2331,7 +2330,7 @@
         "BugReports": "https://github.com/r-lib/styler/issues",
         "Depends": "R (>= 3.6.0)",
         "Imports": "cli (>= 3.1.1), magrittr (>= 2.0.0), purrr (>= 0.2.3), R.cache\n(>= 0.15.0), rlang (>= 1.0.0), rprojroot (>= 1.1), tools, vctrs\n(>= 0.4.1), withr (>= 2.3.0),",
-        "Suggests": "data.tree (>= 0.1.6), digest, dplyr, here, knitr, prettycode,\nrmarkdown, roxygen2, rstudioapi (>= 0.7), tibble (>= 1.4.2),\ntestthat (>= 3.0.0)",
+        "Suggests": "data.tree (>= 0.1.6), digest, here, knitr, prettycode,\nrmarkdown, roxygen2, rstudioapi (>= 0.7), tibble (>= 1.4.2),\ntestthat (>= 3.0.0)",
         "VignetteBuilder": "knitr",
         "Encoding": "UTF-8",
         "RoxygenNote": "7.2.3",
@@ -2339,12 +2338,12 @@
         "Config/testthat/parallel": "true",
         "Collate": "'addins.R' 'communicate.R' 'compat-dplyr.R' 'compat-tidyr.R'\n'detect-alignment-utils.R' 'detect-alignment.R'\n'environments.R' 'expr-is.R' 'indent.R' 'initialize.R' 'io.R'\n'nest.R' 'nested-to-tree.R' 'parse.R' 'reindent.R'\n'token-define.R' 'relevel.R' 'roxygen-examples-add-remove.R'\n'roxygen-examples-find.R' 'roxygen-examples-parse.R'\n'roxygen-examples.R' 'rules-indention.R' 'rules-line-breaks.R'\n'rules-spaces.R' 'rules-tokens.R' 'serialize.R'\n'set-assert-args.R' 'style-guides.R' 'styler-package.R'\n'stylerignore.R' 'testing-mocks.R' 'testing-public-api.R'\n'ui-caching.R' 'testing.R' 'token-create.R' 'transform-block.R'\n'transform-code.R' 'transform-files.R' 'ui-styling.R'\n'unindent.R' 'utils-cache.R' 'utils-files.R'\n'utils-navigate-nest.R' 'utils-strings.R' 'utils.R'\n'vertical.R' 'visit.R' 'zzz.R'",
         "NeedsCompilation": "no",
-        "Packaged": "2023-06-05 14:56:53 UTC; lorenz",
+        "Packaged": "2023-08-27 12:09:22 UTC; lorenz",
         "Author": "Kirill Müller [aut] (<https://orcid.org/0000-0002-1416-3412>),\n  Lorenz Walthert [cre, aut],\n  Indrajeet Patil [ctb] (<https://orcid.org/0000-0003-1995-6531>,\n    @patilindrajeets)",
         "Maintainer": "Lorenz Walthert <lorenz.walthert@icloud.com>",
         "Repository": "CRAN",
-        "Date/Publication": "2023-06-05 15:40:02 UTC",
-        "Built": "R 4.3.0; ; 2023-06-19 17:05:21 UTC; unix"
+        "Date/Publication": "2023-08-29 12:00:02 UTC",
+        "Built": "R 4.3.1; ; 2023-08-29 13:18:19 UTC; unix"
       }
     },
     "sys": {
@@ -2380,8 +2379,8 @@
         "Type": "Package",
         "Package": "teal",
         "Title": "Exploratory Web Apps for Analyzing Clinical Trials Data",
-        "Version": "0.14.0.9004",
-        "Date": "2023-08-24",
+        "Version": "0.14.0.9005",
+        "Date": "2023-09-05",
         "Authors@R": "c(\n    person(\"Dawid\", \"Kaledkowski\", , \"dawid.kaledkowski@roche.com\", role = c(\"aut\", \"cre\")),\n    person(\"Pawel\", \"Rucki\", , \"pawel.rucki@roche.com\", role = \"aut\"),\n    person(\"Aleksander\", \"Chlebowski\", , \"aleksander.chlebowski@contractors.roche.com\", role = \"aut\"),\n    person(\"Kartikeya\", \"Kirar\", , \"kartikeya.kirar@businesspartner.roche.com\", role = \"aut\"),\n    person(\"Marcin\", \"Kosinski\", , \"marcin.kosinski.mk1@roche.com\", role = \"aut\"),\n    person(\"Adrian\", \"Waddell\", , \"adrian.waddell@gene.com\", role = \"aut\"),\n    person(\"Chendi\", \"Liao\", , \"chendi.liao@roche.com\", role = \"rev\"),\n    person(\"Dony\", \"Unardi\", , \"unardid@gene.com\", role = \"rev\"),\n    person(\"Nikolas\", \"Burkoff\", role = \"aut\"),\n    person(\"Mahmoud\", \"Hallal\", role = \"aut\"),\n    person(\"Maciej\", \"Nasinski\", role = \"aut\"),\n    person(\"Konrad\", \"Pagacz\", role = \"aut\"),\n    person(\"Junlue\", \"Zhao\", role = \"aut\"),\n    person(\"F. Hoffmann-La Roche AG\", role = c(\"cph\", \"fnd\")),\n    person(\"Maximilian\", \"Mordig\", role = \"ctb\")\n  )",
         "Description": "A shiny based interactive exploration framework for analyzing\n    clinical trials data. teal currently provides a dynamic filtering\n    facility and different data viewers. teal shiny applications are built\n    using standard shiny modules.",
         "License": "Apache License 2.0 | file LICENSE",
@@ -2399,12 +2398,12 @@
         "Repository": "https://pharmaverse.r-universe.dev",
         "RemoteUrl": "https://github.com/insightsengineering/teal",
         "RemoteRef": "HEAD",
-        "RemoteSha": "54c683b92f845075a787e2aeef582640769ccf61",
+        "RemoteSha": "6bb26c7f216dbf68ffb962ee75838caabdd268d0",
         "NeedsCompilation": "no",
-        "Packaged": "2023-08-24 10:10:31 UTC; root",
+        "Packaged": "2023-09-06 02:58:02 UTC; root",
         "Author": "Dawid Kaledkowski [aut, cre],\n  Pawel Rucki [aut],\n  Aleksander Chlebowski [aut],\n  Kartikeya Kirar [aut],\n  Marcin Kosinski [aut],\n  Adrian Waddell [aut],\n  Chendi Liao [rev],\n  Dony Unardi [rev],\n  Nikolas Burkoff [aut],\n  Mahmoud Hallal [aut],\n  Maciej Nasinski [aut],\n  Konrad Pagacz [aut],\n  Junlue Zhao [aut],\n  F. Hoffmann-La Roche AG [cph, fnd],\n  Maximilian Mordig [ctb]",
         "Maintainer": "Dawid Kaledkowski <dawid.kaledkowski@roche.com>",
-        "Built": "R 4.3.1; ; 2023-08-29 14:37:55 UTC; unix"
+        "Built": "R 4.3.1; ; 2023-09-06 13:19:37 UTC; unix"
       }
     },
     "teal.data": {
@@ -2414,8 +2413,8 @@
         "Type": "Package",
         "Package": "teal.data",
         "Title": "Data Model for `teal` Applications",
-        "Version": "0.3.0.9001",
-        "Date": "2023-08-21",
+        "Version": "0.3.0.9002",
+        "Date": "2023-08-31",
         "Authors@R": "c(\n    person(\"Dawid\", \"Kaledkowski\", , \"dawid.kaledkowski@roche.com\", role = c(\"aut\", \"cre\")),\n    person(\"Pawel\", \"Rucki\", , \"pawel.rucki@roche.com\", role = \"aut\"),\n    person(\"Mahmoud\", \"Hallal\", , \"mahmoud.hallal@roche.com\", role = \"aut\"),\n    person(\"Nikolas\", \"Burkoff\", role = \"aut\"),\n    person(\"Maciej\", \"Nasinski\", role = \"aut\"),\n    person(\"Konrad\", \"Pagacz\", role = \"aut\"),\n    person(\"Junlue\", \"Zhao\", role = \"aut\"),\n    person(\"F. Hoffmann-La Roche AG\", role = c(\"cph\", \"fnd\"))\n  )",
         "Description": "Data Model for `teal` Applications.",
         "License": "Apache License 2.0 | file LICENSE",
@@ -2433,12 +2432,12 @@
         "Repository": "https://pharmaverse.r-universe.dev",
         "RemoteUrl": "https://github.com/insightsengineering/teal.data",
         "RemoteRef": "HEAD",
-        "RemoteSha": "3aee416452dcfd354c61b27f54837c2137055deb",
+        "RemoteSha": "dfd5d971f9760e6460407b5e115ad5e96ec3468d",
         "NeedsCompilation": "no",
-        "Packaged": "2023-08-21 16:11:16 UTC; root",
+        "Packaged": "2023-08-31 15:12:38 UTC; root",
         "Author": "Dawid Kaledkowski [aut, cre],\n  Pawel Rucki [aut],\n  Mahmoud Hallal [aut],\n  Nikolas Burkoff [aut],\n  Maciej Nasinski [aut],\n  Konrad Pagacz [aut],\n  Junlue Zhao [aut],\n  F. Hoffmann-La Roche AG [cph, fnd]",
         "Maintainer": "Dawid Kaledkowski <dawid.kaledkowski@roche.com>",
-        "Built": "R 4.3.1; ; 2023-08-29 14:37:26 UTC; unix"
+        "Built": "R 4.3.1; ; 2023-09-05 22:11:58 UTC; unix"
       }
     },
     "teal.logger": {
@@ -2952,13 +2951,13 @@
       "checksum": "33ad5af9932cf5cbe8847ebf03ede929"
     },
     ".Rprofile": {
-      "checksum": "17ef781c4bad84635e75ac57a272cdb0"
+      "checksum": "f116a1757307ad4dd2919b92a0b6f89f"
     },
     "app.R": {
       "checksum": "c6c739643dfac317e161c17643101260"
     },
     "renv.lock": {
-      "checksum": "2b1537ce5c4239c485af5dc1c4ea16d3"
+      "checksum": "0c828cccab94599e75883cc69f8c87d3"
     }
   },
   "users": null
