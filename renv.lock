@@ -1859,8 +1859,8 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "insightsengineering",
       "RemoteRepo": "teal.slice",
-      "RemoteRef": "main",
-      "RemoteSha": "8bd49e971bef053046793f8803231ffcf4e2c977",
+      "RemoteRef": "473-link-issue",
+      "RemoteSha": "646ed5255089448162fc7a74ef999a405c17bfa2",
       "Requirements": [
         "R",
         "R6",
@@ -1882,7 +1882,7 @@
         "teal.logger",
         "teal.widgets"
       ],
-      "Hash": "7cf511f24b7813cbc41806364d2b8e5a"
+      "Hash": "f7bd4f1e48beeb02b95aab327a3cb2ca"
     },
     "teal.transform": {
       "Package": "teal.transform",

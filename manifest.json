@@ -3654,18 +3654,18 @@
         "RoxygenNote": "7.2.3",
         "Author": "Dawid Kaledkowski [aut, cre],\n  Pawel Rucki [aut],\n  Aleksander Chlebowski [aut],\n  Kartikeya Kirar [aut],\n  Marcin Kosinski [aut],\n  Chendi Liao [rev],\n  Dony Unardi [rev],\n  Andrew Bates [aut],\n  Mahmoud Hallal [aut],\n  Nikolas Burkoff [aut],\n  Maciej Nasinski [aut],\n  Konrad Pagacz [aut],\n  Junlue Zhao [aut],\n  F. Hoffmann-La Roche AG [cph, fnd]",
         "Maintainer": "Dawid Kaledkowski <dawid.kaledkowski@roche.com>",
-        "Built": "R 4.3.1; ; 2023-09-07 16:21:12 UTC; unix",
+        "Built": "R 4.3.1; ; 2023-09-07 16:33:39 UTC; unix",
         "RemoteType": "github",
         "RemoteHost": "api.github.com",
         "RemoteUsername": "insightsengineering",
         "RemoteRepo": "teal.slice",
-        "RemoteRef": "main",
-        "RemoteSha": "8bd49e971bef053046793f8803231ffcf4e2c977",
+        "RemoteRef": "473-link-issue",
+        "RemoteSha": "646ed5255089448162fc7a74ef999a405c17bfa2",
         "GithubHost": "api.github.com",
         "GithubRepo": "teal.slice",
         "GithubUsername": "insightsengineering",
-        "GithubRef": "main",
-        "GithubSHA1": "8bd49e971bef053046793f8803231ffcf4e2c977"
+        "GithubRef": "473-link-issue",
+        "GithubSHA1": "646ed5255089448162fc7a74ef999a405c17bfa2"
       }
     },
     "teal.transform": {
@@ -4186,13 +4186,13 @@
       "checksum": "33ad5af9932cf5cbe8847ebf03ede929"
     },
     ".Rprofile": {
-      "checksum": "7f56dd052459b642cc6de0ce8827af10"
+      "checksum": "e166d37995efc75183d5e642a98f5017"
     },
     "app.R": {
       "checksum": "106f214b0df615d454298606cd5b5a60"
     },
     "renv.lock": {
-      "checksum": "14cdcc7a1607d76e7b287e67e143c10a"
+      "checksum": "e29849274ff29de4b14b093771f06251"
     }
   },
   "users": null
