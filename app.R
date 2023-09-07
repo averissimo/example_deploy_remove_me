@@ -1,4 +1,4 @@
-options("teal.bs_theme" = bslib::bs_theme(version = 4))
+options("teal.bs_theme" = bslib::bs_theme(version = 5))
 
 library(teal.slice)
 library(teal)
